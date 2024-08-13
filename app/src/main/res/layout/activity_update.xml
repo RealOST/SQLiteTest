@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:text="Account:"
+            style="@style/textStyle" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/editStyle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            style="@style/textStyle"
+            android:text="Password:" />
+
+        <EditText
+            android:id="@+id/et_number"
+            style="@style/editStyle"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            style="@style/textStyle"
+            android:text="RePassword:" />
+
+        <EditText
+            android:id="@+id/et_score"
+            style="@style/editStyle"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textStyle"
+            android:text="sex:" />
+
+        <RadioButton
+            android:id="@+id/rb_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="男"/>
+
+        <RadioButton
+            android:id="@+id/rb_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="女"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:text="Update"
+        android:onClick="update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"/>
+
+</LinearLayout>
